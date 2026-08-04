@@ -1,0 +1,6 @@
+{
+  "name": "Tracksy",
+  "description": "AI Expense Tracker with personalized insights, recurring subscriptions tracking, budgets, receipt scanning, and rewards.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
