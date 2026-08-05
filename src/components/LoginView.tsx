@@ -80,7 +80,7 @@ export const LoginView: React.FC<LoginViewProps> = ({
         <div className="text-center space-y-1">
           <TracksyLogo size="lg" showText animated showTagline={false} className="justify-center" />
           <p className="text-xs font-semibold text-slate-600/80 tracking-wide">
-            Liquid Glass & Neomorphic Portal
+            Track Smart & Spend Better
           </p>
         </div>
 
