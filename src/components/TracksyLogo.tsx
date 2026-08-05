@@ -12,62 +12,49 @@ interface TracksyLogoProps {
 
 export const TracksyLogo: React.FC<TracksyLogoProps> = ({
   size = "md",
-  showText = false,
-  showTagline = false,
   animated = false,
   className = "",
 }) => {
-  const logoSize = {
-    sm: 120,
+  const logoWidth = {
+    sm: 110,
     md: 170,
-    lg: 240,
-    xl: 320,
+    lg: 250,
+    xl: 340,
   }[size];
 
-  const logoGraphic = (
-    <div className="relative inline-flex items-center justify-center">
-      <img
-        src={tracksyLogo}
-        alt="Tracksy Logo"
-        className="object-contain drop-shadow-lg"
-        style={{
-          width: logoSize,
-          height: "auto",
-        }}
-      />
-    </div>
+  const logo = (
+    <img
+      src={tracksyLogo}
+      alt="Tracksy Logo"
+      className="object-contain select-none"
+      style={{
+        width: `${logoWidth}px`,
+        height: "auto",
+      }}
+      draggable={false}
+    />
   );
 
   return (
-    <div className={`inline-flex items-center gap-3 ${className}`}>
+    <div className={`inline-flex items-center justify-center ${className}`}>
       {animated ? (
         <motion.div
           animate={{
-            scale: [1, 1.05, 1],
+            scale: [1, 1.03, 1],
           }}
           transition={{
-            duration: 3,
+            duration: 2.5,
             repeat: Infinity,
             ease: "easeInOut",
           }}
         >
-          {logoGraphic}
+          {logo}
         </motion.div>
       ) : (
-        logoGraphic
-      )}
-
-      
-          </div>
-
-          {showTagline && (
-            <div className="mt-1 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
-              TRACK <span className="text-emerald-500">SMART.</span> SPEND{" "}
-              <span className="text-purple-600">BETTER.</span>
-            </div>
-          )}
-        </div>
+        logo
       )}
     </div>
   );
 };
+
+export default TracksyLogo;
