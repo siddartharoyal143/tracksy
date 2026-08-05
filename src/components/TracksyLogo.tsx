@@ -132,10 +132,13 @@ export const TracksyLogo: React.FC<TracksyLogoProps> = ({
         <div className="flex flex-col justify-center">
           <div className={`font-black tracking-tight ${dimensions.text} leading-none flex items-center`}>
             <span
-              className="text-slate-900 dark:text-slate-100"
-              style={{ fontFamily: 'Times New Roman, serif' }}
-            >
-              Track
+  style={{
+    color: "#111827",
+    fontFamily: "Times New Roman, serif"
+  }}
+>
+  Track
+</span>
             </span>
             <span
               className="bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent ml-0.5"
