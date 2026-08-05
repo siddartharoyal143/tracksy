@@ -57,26 +57,7 @@ export const TracksyLogo: React.FC<TracksyLogoProps> = ({
         logoGraphic
       )}
 
-      {showText && (
-        <div className="flex flex-col justify-center">
-          <div className="flex items-center text-2xl font-black leading-none tracking-tight">
-            <span
-              style={{
-                color: "#111827",
-                fontFamily: "Times New Roman, serif",
-              }}
-            >
-              Track
-            </span>
-
-            <span
-              className="ml-1 bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent"
-              style={{
-                fontFamily: "Arial, sans-serif",
-              }}
-            >
-              sy
-            </span>
+      
           </div>
 
           {showTagline && (
